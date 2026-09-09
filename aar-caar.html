@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tax Insight Hub | AAR / CAAR Archive</title>
+<style>
+  :root {--n:#233142;--n2:#2d3e50;--g:#d4a843;--w:#f8fafc;--gr:#94a3b8;--c:#ffffff;--tb:#f1f5f9}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:system-ui,-apple-system,sans-serif;background:var(--n);color:var(--w);line-height:1.6;font-size:14px}
+  header.h{background:linear-gradient(135deg,#233142,#2d3e50,#233142);padding:36px 20px 28px;text-align:center;border-bottom:2px solid var(--g);position:relative}
+  .pic{width:96px;height:96px;border-radius:50%;border:3px solid var(--g);margin:0 auto 14px;overflow:hidden;position:relative;z-index:1;background:var(--n2)}
+  .pic img{width:100%;height:100%;object-fit:cover}
+  h1{font-size:28px;font-weight:700;color:var(--g);letter-spacing:1px;position:relative;z-index:1;margin:0}
+  .ht{font-size:14px;color:var(--gr);margin-top:6px;position:relative;z-index:1;font-style:italic}
+  nav{background:var(--n2);padding:12px 14px;display:flex;flex-wrap:wrap;gap:6px;justify-content:center;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(212,168,67,.2)}
+  nav a{color:var(--gr);font-size:12px;padding:6px 14px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid transparent;text-decoration:none;white-space:nowrap}
+  nav a.active{color:var(--n);background:var(--g);border-color:var(--g);font-weight:600}
+  nav a:hover{color:var(--g);border-color:var(--g)}
+  section.s{padding:24px 16px 4px;max-width:800px;margin:0 auto}
+  details.d{background:var(--c);border:1px solid rgba(212,168,67,.25);border-radius:10px;margin-bottom:12px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.15)}
+  details.d summary{padding:14px 16px;cursor:pointer;list-style:none}
+  details.d summary::-webkit-details-marker{display:none}
+  .t{font-size:15px;font-weight:600;color:#0f172a;line-height:1.45;margin-bottom:4px}
+  .p{font-size:13.5px;color:#334155;line-height:1.55;margin:6px 0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  details.d[open] .p{display:none}
+  .r{font-size:11px;color:var(--g);opacity:.9;margin-top:6px;font-weight:600}
+  .r span { font-size: 0; } 
+  .r span::after { font-size: 11px; }
+  details.d[open] .r span::after{content:'▾ Collapse'}
+  details.d:not([open]) .r span::after{content:'▸ Read more'}
+  .tg{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+  .tg span{font-size:10px;padding:3px 8px;border-radius:12px;background:var(--tb);color:#475569;border:1px solid rgba(0,0,0,.08);font-weight:500}
+  .b{padding:0 16px 16px;font-size:13.5px;color:#1e293b;line-height:1.65;border-top:1px solid rgba(0,0,0,.06);padding-top:12px}
+  .share-bar { display: flex; gap: 8px; margin-top: 14px; padding-top: 10px; border-top: 1px dashed rgba(0,0,0,0.1); }
+  .share-btn { font-size: 11px; padding: 6px 12px; border-radius: 6px; background: #1e293b; color: #ffffff; text-decoration: none; border: 1px solid rgba(212,168,67,0.3); cursor: pointer; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; }
+  .share-btn:hover { background: var(--g); color: #233142; border-color: var(--g); }
+  .share-btn:hover { background: var(--g); color: #ffffff; border-color: var(--g); }
+  footer{text-align:center;padding:28px 16px;border-top:1px solid rgba(212,168,67,.2);margin-top:20px;max-width:800px;margin-left:auto;margin-right:auto}
+  .fn{color:var(--g);font-size:16px;font-weight:600}
+  .fd{color:var(--gr);font-size:13px;margin:6px 0 14px;font-style:italic}
+  .fl{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+  .fl a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;text-decoration:none;border:none}
+  .disclaimer-box { background: rgba(212,168,67,0.08); border: 1px solid rgba(212,168,67,0.25); padding: 14px; border-radius: 8px; font-size: 12px; color: var(--gr); margin-bottom: 15px; text-align: left; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<header class="h">
+<div class="pic"><img src="profile.png" alt="Vikash Agarwal" onerror="this.style.display='none'"></div>
+<h1>Tax Insight Hub</h1>
+<p class="ht">Real-time Tax updates and litigation perspectives… all in one hub</p>
+<div style="display:flex;gap:12px;justify-content:center;margin-top:12px;position:relative;z-index:1">
+<a href="https://whatsapp.com/channel/0029VbCcLS3BFLgbfVsvAY0Y" target="_blank" rel="noopener" title="WhatsApp Channel" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:#25D366;color:white;border-radius:50%;text-decoration:none">
+  <svg style="width:18px;height:18px;fill:currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+<a href="https://www.linkedin.com/in/vikash-agarwal-4a492136" target="_blank" rel="noopener" title="LinkedIn Profile" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:#0A66C2;color:white;border-radius:50%;text-decoration:none">
+  <svg style="width:18px;height:18px;fill:currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+</a>
+</div>
+</header>
+
+
+<nav>
+<a href="index.html">Tax Updates</a>
+<a href="supremecourt.html">Supreme Court</a>
+<a href="highcourts.html">High Courts</a>
+<a href="gstat.html">GSTAT</a>
+<a href="cestat.html">CESTAT</a>
+<a href="aar-caar.html" class="active">AAR / CAAR</a>
+<a href="gst-updates.html">GST Updates</a>
+<a href="industry-policy.html">Industry & Policy</a>
+</nav>
+
+<section class="s">
+  
+
+  <!-- Insight 149 -->
+  <details class="d">
+    <summary>
+      <div class="t">CAAR Confirms No Advance Ruling if Issue Already Settled by Courts — Even in Another Party's Case</div>
+      <div class="p">The Customs Authority for Advance Rulings (CAAR), New Delhi, rejected an application in toto...</div>
+      <div class="r"><span>Insight #149</span></div>
+      <div class="tg"><span class="tag">#CAAR</span><span class="tag">#Jurisdiction</span><span class="tag">#ArecaNuts</span></div>
+    </summary>
+    <div class="b">
+      The Customs Authority for Advance Rulings (CAAR), New Delhi, rejected an application in toto regarding the classification of oven-roasted areca nuts and its eligibility for a basic customs duty exemption, highlighting a major jurisdictional boundary.<br><br>Under Section 28-I(2)(b) of the Customs Act, 1962, CAAR is statutorily prohibited from admitting an application if the question raised is the same as a matter already decided by a Court or the Appellate Tribunal.<br><br>Crucially, the Authority emphasized that <strong>this restriction is applicant-agnostic</strong>; because the exact classification dispute had already been conclusively settled by the Hon'ble Madras High Court in a third-party's case, CAAR had no power to re-adjudicate the issue.<br><br>Furthermore, since the advance ruling framework does not permit partial rejections, the secondary query on duty exemption was also dismissed, reinforcing that <strong>judicial discipline strictly bars CAAR from entering territory already ruled upon by higher courts.</strong>
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20CAAR%20Advance%20Ruling%20Settled%20Issue:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <!-- Insight 150 -->
+  <details class="d">
+    <summary>
+      <div class="t">CAAR Cancels Advance Ruling on Mobile Phone Parts — Factual Misrepresentation</div>
+      <div class="p">In a significant enforcement order, CAAR declared a previously issued advance ruling void ab initio...</div>
+      <div class="r"><span>Insight #150</span></div>
+      <div class="tg"><span class="tag">#CAAR</span><span class="tag">#Section28K</span><span class="tag">#MobilePhone</span></div>
+    </summary>
+    <div class="b">
+      In a significant enforcement order, the Customs Authority for Advance Rulings (CAAR) declared a previously issued advance ruling <strong>void ab initio under Section 28K of the Customs Act.</strong><br><br>An importer had secured a Nil (0%) duty exemption by deceptively characterizing fully finished, independent mobile phone components as basic raw "inputs" required to manufacture plastic covers. Subsequent intelligence investigations and a Chartered Engineer's inspection revealed the covers were already fully manufactured before these finished components were attached in a simple post-manufacturing assembly process.<br><br>Rejecting the importer's defense that the Department was legally required to file a standard appeal under Section 28KA to dispute the classification, CAAR drew a strict jurisdictional line. The Authority held that while <strong>Section 28KA handles disputes over legal interpretation, Section 28K grants CAAR the absolute, independent power to strike down a ruling entirely if the foundational facts were disguised or misrepresented</strong> to obtain the initial order.
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20CAAR%20Mobile%20Phone%20Parts:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <!-- Insight 151 -->
+  <details class="d">
+    <summary>
+      <div class="t">Mumbai CAAR: Strict Limits on R&D Duty Exemptions for Off-Site Manufacturing</div>
+      <div class="p">CAAR held customs duty exemptions under Notification No. 45/2025-Customs must be interpreted strictly...</div>
+      <div class="r"><span>Insight #151</span></div>
+      <div class="tg"><span class="tag">#CAAR</span><span class="tag">#RandD</span><span class="tag">#DutyExemption</span></div>
+    </summary>
+    <div class="b">
+      The Customs Authority for Advance Rulings (CAAR) has held that customs duty exemptions under Notification No. 45/2025-Customs must be interpreted strictly, <strong>denying tax benefits for materials used in "Exhibit Batch" manufacturing at external sites.</strong><br><br>While the Authority confirmed that DSIR-recognized R&D units qualify for concessions on genuine research consumables, it ruled that transferring these goods to a separate manufacturing facility violates the mandatory "no-transfer" condition and fails the institutional eligibility requirement.<br><br>This decision entails strict compliance in order to retain duty concessions — <strong>imported research goods must strictly remain within the premises of the authorized research entity</strong>, as the Authority will not extend exemptions to external manufacturing or scale-up activities.
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20Mumbai%20CAAR%20R%26D%20Exemption:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <!-- Insight 152 -->
+  <details class="d">
+    <summary>
+      <div class="t">CAAR Delhi: Customs Exemption Available on Goods Wasted During Manufacture — Vivo Mobile</div>
+      <div class="p">CAAR Delhi ruled in favor of Vivo Mobile India affirming concessional duty benefits remain valid...</div>
+      <div class="r"><span>Insight #152</span></div>
+      <div class="tg"><span class="tag">#CAAR</span><span class="tag">#ManufacturingWaste</span><span class="tag">#VivoMobile</span></div>
+    </summary>
+    <div class="b">
+      In a landmark decision, the Customs Authority for Advance Rulings (CAAR), New Delhi, has ruled in favor of <em>Vivo Mobile India</em>, affirming that <strong>concessional duty benefits remain valid even for imported parts that are damaged or scrapped during production.</strong><br><br>The core rationale of the ruling is the distinction between "for use" and "actually used"; the Authority held that as long as components are imported with the <em>intent</em> to manufacture and are put into the production line, they meet the exemption criteria.<br><br>By rejecting the rigid application of export-based wastage norms (SION) and warehousing rules (MOOWR), <strong>CAAR Delhi has provided vital clarity for the industry</strong>, recognizing that minor process loss is a technical reality of high-tech manufacturing that should not lead to a loss of tax benefits.
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20CAAR%20Vivo%20Manufacturing%20Waste:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <!-- Insight 153 -->
+  <details class="d">
+    <summary>
+      <div class="t">CAAR: ADAS Camera Module Classified as Motor Vehicle Part, Not Automatic Regulator</div>
+      <div class="p">CAAR examined classification of an ADAS camera module imported for integration into motor vehicles...</div>
+      <div class="r"><span>Insight #153</span></div>
+      <div class="tg"><span class="tag">#CAAR</span><span class="tag">#ADAS</span><span class="tag">#Classification</span></div>
+    </summary>
+    <div class="b">
+      The CAAR examined the classification of an Advanced Driver Assistance System (ADAS) camera module imported for integration into motor vehicles.<br><br>The importer argued that the module's ECU analyses data and automatically triggers functions such as lane assist, adaptive cruise control and emergency braking.<br><br>However, the Authority observed that the imported module itself only contained a camera and ECU, while the actual sensing was done by other sensors in the vehicle and the actual braking, steering or acceleration was carried out by separate vehicle systems.<br><br>Since the imported product, by itself, <strong>did not perform the complete automatic control function, it was held to be a part of a motor vehicle rather than an automatic regulator.</strong>
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20CAAR%20ADAS%20Classification:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <!-- Insight 154 -->
+  <details class="d">
+    <summary>
+      <div class="t">No GST on Transit Loss Recoveries from Transporters — Gujarat AAR</div>
+      <div class="p">Gujarat AAR held compensation recovered from transporters for transit losses is not liable to GST...</div>
+      <div class="r"><span>Insight #154</span></div>
+      <div class="tg"><span class="tag">#AAR</span><span class="tag">#TransitLoss</span><span class="tag">#LiquidatedDamages</span></div>
+    </summary>
+    <div class="b">
+      In a significant ruling, the Gujarat AAR has held that <strong>compensation recovered from transporters for shortages, leakages, contamination, theft, delayed delivery and other transit losses is not liable to GST.</strong><br><br>The Authority noted that although the transportation agreements expressly contained clauses requiring transporters to compensate the company for such losses and even permitted deduction of such amounts from freight bills, these clauses merely prescribed the consequences of breach and did not create any independent agreement under which the company agreed to tolerate the breach.<br><br>The dominant object of the contract remained transportation of goods, while the compensation was only a mechanism to indemnify the company for actual losses arising from the transporter's default.<br><br>Accordingly, relying on CBIC Circular No. 178/10/2022, the AAR held that such recoveries are in the nature of <strong>liquidated damages — a mere flow of money on account of breach of contract</strong> and not consideration for any separate supply or for "agreeing to tolerate an act" under Para 5(e) of Schedule II of the CGST Act.<br><br>Consequently, no GST is payable on such compensation.
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20Gujarat%20AAR%20Transit%20Loss:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <!-- Insight 155 -->
+  <details class="d">
+    <summary>
+      <div class="t">Hotel Project Transfer to LLP Is Taxable Supply of Service — Odisha AAR</div>
+      <div class="p">Odisha AAR ruled transferring a hotel project as a capital contribution to an LLP...</div>
+      <div class="r"><span>Insight #155</span></div>
+      <div class="tg"><span class="tag">#AAR</span><span class="tag">#HotelProject</span><span class="tag">#LLP</span></div>
+    </summary>
+    <div class="b">
+      In a significant decision for the hospitality and real estate sectors, the Odisha Authority for Advance Ruling (AAR) has ruled in the case of <em>M/s Aryapride Hotel and Convention Private Limited</em> that <strong>transferring a hotel project as a capital contribution to a Limited Liability Partnership (LLP) is a taxable supply of service under GST.</strong><br><br>The applicant proposed to contribute the rights to use certain floors of its building to an LLP in exchange for a 56% profit-sharing interest, while retaining the actual ownership of the land.<br><br>The AAR rejected the claim that this was a tax-free "sale of land" under Schedule III, clarifying instead that <strong>the transaction constitutes a "right to use" leasehold land and construction services under Schedule II</strong>, making it a taxable service between two distinct legal persons.<br><br>The Authority emphasized that because the project was pre-planned for commercial exploitation through the LLP, <strong>the profit-sharing rights received by the applicant qualify as non-monetary consideration, thereby attracting GST on the entire transfer.</strong>
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20Odisha%20AAR%20Hotel%20Project:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <!-- Insight 156 -->
+  <details class="d">
+    <summary>
+      <div class="t">Rebates on Corporate Card Payments Not Liable to GST — Karnataka AAR</div>
+      <div class="p">Karnataka AAR ruled rebates granted by HSBC Bank on excise duty payments...</div>
+      <div class="r"><span>Insight #156</span></div>
+      <div class="tg"><span class="tag">#AAR</span><span class="tag">#CorporateCard</span><span class="tag">#Rebates</span></div>
+    </summary>
+    <div class="b">
+      The Karnataka AAR, in the case of <em>M/s John Distilleries Pvt Ltd</em>, has ruled that <strong>rebates granted by HSBC Bank on excise duty payments made via Corporate Card are not liable to GST.</strong><br><br>The applicant used HSBC Corporate Card to pay excise duty; the bank granted monthly rebates linked to duty payments.<br><br>The AAR held that rebates are mere transactions in money, reducing card liability, not consideration for any supply. Covered under exemption for services by way of extending deposits/loans/advances where consideration is interest/discount.<br><br>Hence, <strong>outside Section 7 of CGST Act, 2017 and not liable to GST.</strong>
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20Karnataka%20AAR%20Corporate%20Card:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+</section>
+
+<footer>
+  <div class="disclaimer-box">
+    <strong>Disclaimer:</strong> The content on this page is based on personal opinion and knowledge. Its veracity should be verified independently and it is not to be used for commercial purposes. This content is strictly for knowledge-sharing and is not intended for the solicitation of any business.
+  </div>
+  <div class="fn">Tax Insight Hub</div>
+  <div class="fd">Real-time Tax updates and litigation perspectives… all in one hub</div>
+  <div class="fl" style="display:flex;gap:12px;justify-content:center">
+    <a href="https://whatsapp.com/channel/0029VbCcLS3BFLgbfVsvAY0Y" target="_blank" title="WhatsApp Channel" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:#25D366;color:white;border-radius:50%;text-decoration:none">
+      <svg style="width:18px;height:18px;fill:currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/vikash-agarwal-4a492136" target="_blank" title="LinkedIn Profile" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:#0A66C2;color:white;border-radius:50%;text-decoration:none">
+      <svg style="width:18px;height:18px;fill:currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+    </a>
+  </div>
+  <div style="font-size:10px; color:var(--gr); margin-top:10px;">Curated by Vikash Agarwal · © 2026 Tax Insight Hub</div>
+</footer>
+
+<script>
+  window.addEventListener('load', function() {
+    document.querySelectorAll('.share-bar').forEach(bar => {
+      const card = bar.closest('details');
+      if (!card) return;
+      const title = card.querySelector('.t')?.innerText.trim() || 'Tax Update';
+      const text = card.querySelector('.p')?.innerText.trim() || '';
+      const url = window.location.href;
+
+      bar.innerHTML = '';
+
+      const shareBtn = document.createElement('button');
+      shareBtn.className = 'share-btn';
+      shareBtn.innerHTML = '<svg style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8m-4-6l-4-4m0 0L8 6m4-4v12"/></svg> Share';
+
+      shareBtn.onclick = function(e) {
+        e.preventDefault();
+        if (navigator.share) {
+          navigator.share({ title: title, text: title + '\n\n' + text, url: url }).catch(()=>{});
+        } else {
+          navigator.clipboard.writeText(title + '\n\n' + url);
+          alert('Link copied to clipboard!');
+        }
+      };
+
+      bar.appendChild(shareBtn);
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const section = document.querySelector('section.s');
+    if (!section) return;
+    const cards = Array.from(section.querySelectorAll('details.d'));
+    cards.sort((a, b) => {
+      const getNum = (el) => {
+        const text = el.querySelector('.r')?.innerText || '';
+        const match = text.match(/#(\d+)/);
+        return match ? parseInt(match[1], 10) : 0;
+      };
+      return getNum(b) - getNum(a);
+    });
+    cards.forEach(card => section.appendChild(card));
+  });
+</script>
+
+</body>
+</html>

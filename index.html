@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Insight Hub</title>
+  <style>
+    :root {--n:#233142;--n2:#2d3e50;--g:#d4a843;--w:#f8fafc;--gr:#94a3b8;--c:#ffffff;--tb:#f1f5f9}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,sans-serif;background:var(--n);color:var(--w);line-height:1.6;font-size:14px}
+    header.h{background:linear-gradient(135deg,#233142,#2d3e50,#233142);padding:36px 20px 28px;text-align:center;border-bottom:2px solid var(--g);position:relative}
+    .pic{width:96px;height:96px;border-radius:50%;border:3px solid var(--g);margin:0 auto 14px;overflow:hidden;position:relative;z-index:1;background:var(--n2)}
+    .pic img{width:100%;height:100%;object-fit:cover}
+    h1{font-size:28px;font-weight:700;color:var(--g);letter-spacing:1px;position:relative;z-index:1;margin:0}
+    .ht{font-size:14px;color:var(--gr);margin-top:6px;margin-bottom:12px;position:relative;z-index:1;font-style:italic}
+    .top-social{display:flex;gap:12px;justify-content:center;margin-top:10px}
+    .top-social a{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;text-decoration:none}
+    nav{background:var(--n2);padding:12px 14px;display:flex;flex-wrap:wrap;gap:6px;justify-content:center;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(212,168,67,.2)}
+    nav a{color:var(--gr);font-size:12px;padding:6px 14px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid transparent;text-decoration:none;white-space:nowrap}
+    nav a.active{color:var(--n);background:var(--g);border-color:var(--g);font-weight:600}
+    nav a:hover{color:var(--g);border-color:var(--g)}
+    section.s{padding:24px 16px 4px;max-width:800px;margin:0 auto}
+    details.d{background:var(--c);border:1px solid rgba(212,168,67,.25);border-radius:10px;margin-bottom:12px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.15)}
+    details.d summary{padding:14px 16px;cursor:pointer;list-style:none}
+    details.d summary::-webkit-details-marker{display:none}
+    .t{font-size:15px;font-weight:600;color:#0f172a;line-height:1.45;margin-bottom:4px}
+    .p{font-size:13.5px;color:#334155;line-height:1.55;margin:6px 0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+    details.d[open] .p{display:none}
+    .r{font-size:11px;color:var(--g);opacity:.9;margin-top:6px;font-weight:600}
+    .r span { font-size: 0; } 
+    .r span::after { font-size: 11px; }
+    details.d[open] .r span::after{content:'▾ Collapse'}
+    details.d:not([open]) .r span::after{content:'▸ Read more'}
+    .tg{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+    .tg span{font-size:10px;padding:3px 8px;border-radius:12px;background:var(--tb);color:#475569;border:1px solid rgba(0,0,0,.08);font-weight:500}
+    .b{padding:0 16px 16px;font-size:13.5px;color:#1e293b;line-height:1.65;border-top:1px solid rgba(0,0,0,.06);padding-top:12px}
+    .share-bar { display: flex; gap: 8px; margin-top: 14px; padding-top: 10px; border-top: 1px dashed rgba(0,0,0,0.1); }
+    .share-btn { font-size: 11px; padding: 6px 12px; border-radius: 6px; background: #1e293b; color: #ffffff; text-decoration: none; border: 1px solid rgba(212,168,67,0.3); cursor: pointer; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; }
+    .share-btn:hover { background: var(--g); color: #233142; border-color: var(--g); }
+    .disclaimer{max-width:800px;margin:24px auto 16px;padding:14px 16px;background:rgba(255,255,255,0.03);border:1px solid rgba(212,168,67,0.2);border-radius:8px;font-size:12px;color:var(--gr);line-height:1.5}
+    footer{text-align:center;padding:28px 16px;border-top:1px solid rgba(212,168,67,.2);margin-top:20px;max-width:800px;margin-left:auto;margin-right:auto}
+    .fn{color:var(--g);font-size:16px;font-weight:600}
+    .fd{color:var(--gr);font-size:13px;margin:6px 0 14px;font-style:italic}
+    .fl{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+    .fl a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;text-decoration:none;border:none}
+  </style>
+</head>
+<body>
+
+  <header class="h">
+    <div class="pic"><img src="profile.png" alt="Vikash Agarwal"></div>
+    <h1>Tax Insight Hub</h1>
+    <div class="ht">Real-time Tax updates and litigation perspectives... all in one hub</div>
+    <div class="top-social">
+      <a href="https://whatsapp.com/channel/0029VbCcLS3BFLgbfVsvAY0Y" target="_blank" style="background:#25D366;color:white;"><svg style="width:16px;height:16px;fill:currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
+      <a href="https://linkedin.com" target="_blank" style="background:#0a66c2;color:white;"><svg style="width:16px;height:16px;fill:currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">Tax Updates</a>
+    <a href="supremecourt.html">Supreme Court</a>
+    <a href="highcourts.html">High Courts</a>
+    <a href="gstat.html">GSTAT</a>
+    <a href="cestat.html">CESTAT</a>
+    <a href="aar-caar.html">AAR / CAAR</a>
+    <a href="industry-policy.html">Industry & Policy</a>
+  </nav>
+
+  <section class="s">
+
+    <!-- Insight #199 (September 9, 2026) -->
+    <details class="d">
+      <summary>
+        <div class="t">Hon'ble Calcutta HC Upholds 9% Interest & Rejects 6% Cap on Mistake-of-Law Refunds!</div>
+        <div class="p">When tax is deposited under a mistake of law, it does not bear the character of duty, taking it outside strict Section 11B limitations...</div>
+        <div class="r"><span>Insight #199</span> <span style="font-size:11px; font-weight:normal; color:var(--gr); float:right;">September 9, 2026</span></div>
+        <div class="tg"><span>#CalcuttaHC</span><span>#Refunds</span><span>#Interest</span><span>#IndirectTax</span></div>
+      </summary>
+      <div class="b">
+        When tax is deposited under a mistake of law, it does not bear the character of duty, taking it outside strict Section 11B limitations and rendering the statutory 6% notification cap inapplicable - fully justifying a robust 9% compensatory interest rate.<br><br>
+        Reaffirming this, Hon'ble Calcutta High Court further ruled that Section 11BB interest runs automatically from the expiry of three months from the original refund application date, completely blocking revenue's attempts to reckon delay from subsequent document submissions or appellate orders.<br><br>
+        <em>CEXA 26/2025</em>
+        <div class="share-bar"></div>
+      </div>
+    </details>
+
+    <!-- Insight #198 (September 9, 2026) -->
+    <details class="d">
+      <summary>
+        <div class="t">Supreme Court Reserves Order on Statutory Regulation of Pharmaceutical Marketing and Freebies</div>
+        <div class="p">Hon’ble Supreme Court has reserved its order on a plea seeking the statutory regulation of pharmaceutical marketing practices...</div>
+        <div class="r"><span>Insight #198</span> <span style="font-size:11px; font-weight:normal; color:var(--gr); float:right;">September 9, 2026</span></div>
+        <div class="tg"><span>#SupremeCourt</span><span>#Pharma</span><span>#UCPMP</span><span>#Healthcare</span></div>
+      </summary>
+      <div class="b">
+        Hon’ble Supreme Court has reserved its order on a plea seeking the statutory regulation of pharmaceutical marketing practices, following submissions by Solicitor General Tushar Mehta that the Union government will constitute a three-member committee to examine the framework within two months.<br><br>
+        While the voluntary Uniform Code for Pharmaceutical Marketing Practices (UCPMP) 2024 remains in effect interimly, petitioners underscored a legislative gap wherein doctors face disciplinary penalties under medical council regulations for accepting inducements, yet companies offering them lack corresponding direct statutory penalties invoking the Supreme Court's 2022 income tax judgment in Apex Laboratories Pvt. Ltd. v. Deputy Commissioner of Income Tax, which held that such freebies create a "publicly injurious cycle" and that prohibitions against doctors accepting gifts implicitly extend to the givers.<br><br>
+        <em>Federation of Medical and Sales Representatives Associations of India</em>
+        <div class="share-bar"></div>
+      </div>
+    </details>
+
+    <!-- Insight #197 (September 8, 2026) -->
+    <details class="d">
+      <summary>
+        <div class="t">CENVAT Credit Inadmissible on Capital Goods Imported by Separate Legal Entity Even If the Power Is Used for Captive Manufacturing of Taxable Products</div>
+        <div class="p">Hon'ble CESTAT Chennai held that tax credit is a strict statutory concession that cannot be availed by one incorporated entity on capital goods imported...</div>
+        <div class="r"><span>Insight #197</span> <span style="font-size:11px; font-weight:normal; color:var(--gr); float:right;">September 8, 2026</span></div>
+        <div class="tg"><span>#CESTAT</span><span>#CENVATCredit</span><span>#CapitalGoods</span><span>#SeparateLegalEntity</span></div>
+      </summary>
+      <div class="b">
+        Hon'ble CESTAT Chennai held that tax credit is a strict statutory concession that cannot be availed by one incorporated entity on capital goods imported and duty-paid by a separate independent company, even if the power generated is used exclusively for the captive manufacturing of excisable products.<br><br>
+        The bench emphasized that majority shareholding, captive power arrangements, and economic integration cannot override the fundamental corporate law doctrine of separate legal personality or bypass the strict procedural conditions prescribed under the CENVAT Credit Rules, 2004.<br><br>
+        <a href="https://cestat.gov.in/weborders/file/chennai/581227" target="_blank" rel="noopener" style="color:var(--g);text-decoration:underline;font-weight:600;">https://cestat.gov.in/weborders/file/chennai/581227</a>
+        <div class="share-bar"></div>
+      </div>
+    </details>
+
+    <!-- Insight #196 (September 8, 2026) -->
+    <details class="d">
+      <summary>
+        <div class="t">WB AAR: Pure‑Agent exclusion allowed even if Rule 33 not met; No GST on electricity reimbursements at actuals</div>
+        <div class="p">Hon’ble West Bengal AAR has held that recovery of electricity charges at actual cost, without any mark‑up, can qualify as pure agent reimbursement...</div>
+        <div class="r"><span>Insight #196</span> <span style="font-size:11px; font-weight:normal; color:var(--gr); float:right;">September 8, 2026</span></div>
+        <div class="tg"><span>#WBAAR</span><span>#PureAgent</span><span>#GST</span><span>#ElectricityReimbursement</span></div>
+      </summary>
+      <div class="b">
+        Hon’ble West Bengal AAR has held that recovery of electricity charges at actual cost, without any mark‑up, can qualify as pure agent reimbursement and remain outside GST.<br><br>
+        Two significant observations stand out:<br><br>
+        • <strong>Rule 33 vs Circular:</strong> Even after finding that the applicant fails the pure‑agent test under Rule 33 of the CGST Rules, the AAR held that the deeming fiction in the second sentence of Para 3.3 still applies – where electricity is recovered from occupants at the same amount charged by the DISCOM and without any profit element, the supplier is deemed to act as a pure agent, and GST does not apply.<br><br>
+        • <strong>Scope widened:</strong> The AAR noted that Para 3.3 of Circular No. 206/18/2023‑GST begins with the word “however”, creating an exception to the general principle that electricity supplied along with maintenance/renting forms part of a taxable composite supply. Importantly, the expression “etc.” after Real Estate Owners, RWAs and Developers widens the scope of the Circular to other entities as well, so long as the nature of supply is similar.<br><br>
+        <strong>Impact:</strong> The Circular’s deeming provision operates independently of strict Rule 33 conditions. This reasoning may support actual‑cost electricity recovery by facility managers, maintenance companies and similar arrangements, beyond traditional real estate setups.<br><br>
+        <em>10/WBAAR/2026-27</em>
+        <div class="share-bar"></div>
+      </div>
+    </details>
+
+    <!-- Insight #195 (September 5, 2026) -->
+    <details class="d">
+      <summary>
+        <div class="t">Subsequent sale or remanufacturing of imported goods determines customs value</div>
+        <div class="p">Recently the Hon’ble US CBP has addressed valuation of used, damaged or defective transaxle “cores” returned to the US under a core-exchange programme...</div>
+        <div class="r"><span>Insight #195</span> <span style="font-size:11px; font-weight:normal; color:var(--gr); float:right;">September 5, 2026</span></div>
+        <div class="tg"><span>#Customs</span><span>#Valuation</span><span>#USCBP</span></div>
+      </summary>
+      <div class="b">
+        Recently the Hon’ble US CBP has addressed valuation of used, damaged or defective transaxle “cores” returned to the US under a core-exchange programme.<br><br>
+        • Toyota Canada returned used cores to its US remanufacturer. The cores were not sold to the US at the time of import; the payment received was only a refund of the earlier $1,000 core deposit.<br><br>
+        • CBP therefore held that the transaction value method was not available.<br><br>
+        • Instead, CBP permitted use of the fallback method, with the eventual treatment of the imported core becoming relevant:<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;– If the core is subsequently sold as-is → value can be based on the sale price of comparable cores.<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;– If the core is remanufactured → value can be based on the subsequent sale price of the remanufactured product, less the average cost of repair/remanufacturing.<br><br>
+        • Since the importer may not know at the time of import which route the core will take, CBP recommended Reconciliation to determine the final value subsequently.<br><br>
+        <strong>📌 The interesting takeaway:</strong> Even though there is no sale at the time of import, subsequent commercial transactions can provide the basis for determining customs value under the fallback method.
+        <div class="share-bar"></div>
+      </div>
+    </details>
+
+    <!-- Insight #194 (September 5, 2026) -->
+    <details class="d">
+      <summary>
+        <div class="t">Supreme Court Holds "Fails to Pay" Means Non-Payment, Not Delay in Payment</div>
+        <div class="p">Is ITC reversal required if a supplier is not paid within 180 days, but the payment is made subsequently? Read the full perspective on LinkedIn...</div>
+        <div class="r"><span>Insight #194</span> <span style="font-size:11px; font-weight:normal; color:var(--gr); float:right;">September 5, 2026</span></div>
+        <div class="tg"><span>#SupremeCourt</span><span>#ITC</span><span>#Section16</span></div>
+      </summary>
+      <div class="b">
+        Supreme Court Holds "Fails to Pay" Means Non-Payment, Not Delay in Payment<br><br>
+        Is ITC reversal required if a supplier is not paid within 180 days, but the payment is made subsequently?<br><br>
+        <a href="https://lnkd.in/p/dRxQP3eA" target="_blank" rel="noopener" style="color:var(--g);text-decoration:underline;font-weight:600;">Read the complete post and discussion on LinkedIn →</a>
+        <div class="share-bar"></div>
+      </div>
+    </details>
+
+  </section>
+
+  <div style="max-width:800px;margin:0 auto;padding:0 16px;">
+    <div class="disclaimer">
+      <strong>Disclaimer:</strong> The content on this page is based on personal opinion and knowledge. Its veracity should be verified independently and it is not to be used for commercial purposes. This content is strictly for knowledge-sharing and is not intended for the solicitation of any business.
+    </div>
+  </div>
+
+  <footer>
+    <div class="fn">Tax Insight Hub</div>
+    <div class="fd">Real-time Tax updates and litigation perspectives... all in one hub</div>
+    <div class="fl">
+      <a href="https://whatsapp.com/channel/0029VbCcLS3BFLgbfVsvAY0Y" target="_blank" style="background:#25D366;color:white;"><svg style="width:18px;height:18px;fill:currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
+      <a href="https://linkedin.com" target="_blank" style="background:#0a66c2;color:white;"><svg style="width:18px;height:18px;fill:currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+    </div>
+    <div>Curated by Vikash Agarwal · © 2026 Tax Insight Hub</div>
+  </footer>
+
+  <script>
+    window.addEventListener('load', function() {
+      document.querySelectorAll('.share-bar').forEach(bar => {
+        const card = bar.closest('details');
+        if (!card) return;
+        const title = card.querySelector('.t')?.innerText.trim() || 'Tax Update';
+        const text = card.querySelector('.p')?.innerText.trim() || '';
+        const url = window.location.href;
+
+        bar.innerHTML = '';
+
+        const shareBtn = document.createElement('button');
+        shareBtn.className = 'share-btn';
+        shareBtn.innerHTML = '<svg style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8m-4-6l-4-4m0 0L8 6m4-4v12"/></svg> Share';
+
+        shareBtn.onclick = function(e) {
+          e.preventDefault();
+          const boldTitle = '*' + title + '*';
+          const sharePayload = boldTitle + '\n\n' + text + '\n\n' + url;
+
+          if (navigator.share) {
+            navigator.share({ title: title, text: sharePayload, url: url }).catch(()=>{});
+          } else {
+            navigator.clipboard.writeText(sharePayload);
+            alert('Post copied to clipboard with bold caption!');
+          }
+        };
+
+        bar.appendChild(shareBtn);
+      });
+    });
+  </script>
+</body>
+</html>

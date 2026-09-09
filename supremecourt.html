@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tax Insight Hub | Supreme Court Archive</title>
+<style>
+  :root {--n:#233142;--n2:#2d3e50;--g:#d4a843;--w:#f8fafc;--gr:#94a3b8;--c:#ffffff;--tb:#f1f5f9}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:system-ui,-apple-system,sans-serif;background:var(--n);color:var(--w);line-height:1.6;font-size:14px}
+  header.h{background:linear-gradient(135deg,#233142,#2d3e50,#233142);padding:36px 20px 28px;text-align:center;border-bottom:2px solid var(--g);position:relative}
+  .pic{width:96px;height:96px;border-radius:50%;border:3px solid var(--g);margin:0 auto 14px;overflow:hidden;position:relative;z-index:1;background:var(--n2)}
+  .pic img{width:100%;height:100%;object-fit:cover}
+  h1{font-size:28px;font-weight:700;color:var(--g);letter-spacing:1px;position:relative;z-index:1;margin:0}
+  .ht{font-size:14px;color:var(--gr);margin-top:6px;position:relative;z-index:1;font-style:italic}
+  nav{background:var(--n2);padding:12px 14px;display:flex;flex-wrap:wrap;gap:6px;justify-content:center;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(212,168,67,.2)}
+  nav a{color:var(--gr);font-size:12px;padding:6px 14px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid transparent;text-decoration:none;white-space:nowrap}
+  nav a.active{color:var(--n);background:var(--g);border-color:var(--g);font-weight:600}
+  nav a:hover{color:var(--g);border-color:var(--g)}
+  section.s{padding:24px 16px 4px;max-width:800px;margin:0 auto}
+  details.d{background:var(--c);border:1px solid rgba(212,168,67,.25);border-radius:10px;margin-bottom:12px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.15)}
+  details.d summary{padding:14px 16px;cursor:pointer;list-style:none}
+  details.d summary::-webkit-details-marker{display:none}
+  .t{font-size:15px;font-weight:600;color:#0f172a;line-height:1.45;margin-bottom:4px}
+  .p{font-size:13.5px;color:#334155;line-height:1.55;margin:6px 0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  details.d[open] .p{display:none}
+  .r{font-size:11px;color:var(--g);opacity:.9;margin-top:6px;font-weight:600}
+  .r span { font-size: 0; } 
+  .r span::after { font-size: 11px; }
+  details.d[open] .r span::after{content:'▾ Collapse'}
+  details.d:not([open]) .r span::after{content:'▸ Read more'}
+  .tg{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+  .tg span{font-size:10px;padding:3px 8px;border-radius:12px;background:var(--tb);color:#475569;border:1px solid rgba(0,0,0,.08);font-weight:500}
+  .b{padding:0 16px 16px;font-size:13.5px;color:#1e293b;line-height:1.65;border-top:1px solid rgba(0,0,0,.06);padding-top:12px}
+  .share-bar { display: flex; gap: 8px; margin-top: 14px; padding-top: 10px; border-top: 1px dashed rgba(0,0,0,0.1); }
+  .share-btn { font-size: 11px; padding: 6px 12px; border-radius: 6px; background: #1e293b; color: #ffffff; text-decoration: none; border: 1px solid rgba(212,168,67,0.3); cursor: pointer; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; }
+  .share-btn:hover { background: var(--g); color: #233142; border-color: var(--g); }
+  .share-btn:hover { background: var(--g); color: #ffffff; border-color: var(--g); }
+  footer{text-align:center;padding:28px 16px;border-top:1px solid rgba(212,168,67,.2);margin-top:20px;max-width:800px;margin-left:auto;margin-right:auto}
+  .fn{color:var(--g);font-size:16px;font-weight:600}
+  .fd{color:var(--gr);font-size:13px;margin:6px 0 14px;font-style:italic}
+  .fl{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+  .fl a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;text-decoration:none;border:none}
+  .disclaimer-box { background: rgba(212,168,67,0.08); border: 1px solid rgba(212,168,67,0.25); padding: 14px; border-radius: 8px; font-size: 12px; color: var(--gr); margin-bottom: 15px; text-align: left; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<header class="h">
+<div class="pic"><img src="profile.png" alt="Vikash Agarwal" onerror="this.style.display='none'"></div>
+<h1>Tax Insight Hub</h1>
+<p class="ht">Real-time Tax updates and litigation perspectives… all in one hub</p>
+<div style="display:flex;gap:12px;justify-content:center;margin-top:12px;position:relative;z-index:1">
+<a href="https://whatsapp.com/channel/0029VbCcLS3BFLgbfVsvAY0Y" target="_blank" rel="noopener" title="WhatsApp Channel" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:#25D366;color:white;border-radius:50%;text-decoration:none">
+  <svg style="width:18px;height:18px;fill:currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+<a href="https://www.linkedin.com/in/vikash-agarwal-4a492136" target="_blank" rel="noopener" title="LinkedIn Profile" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:#0A66C2;color:white;border-radius:50%;text-decoration:none">
+  <svg style="width:18px;height:18px;fill:currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+</a>
+</div>
+</header>
+
+
+<nav>
+<a href="index.html">Tax Updates</a>
+<a href="supremecourt.html" class="active">Supreme Court</a>
+<a href="highcourts.html">High Courts</a>
+<a href="gstat.html">GSTAT</a>
+<a href="cestat.html">CESTAT</a>
+<a href="aar-caar.html">AAR / CAAR</a>
+<a href="gst-updates.html">GST Updates</a>
+<a href="industry-policy.html">Industry & Policy</a>
+</nav>
+
+
+<section class="s">
+  
+  <details class="d">
+    <summary>
+      <div class="t">BREAKING: SC Rules Rule 96(10) Cannot Survive in Pending Cases After Its Omission</div>
+      <div class="p">Hon'ble SC has held that the omission of Rule 96(10) of the CGST Rules with effect from 8 October 2024 applies even to pending refund proceedings...</div>
+      <div class="r"><span>Insight #157</span></div>
+      <div class="tg"><span>#SupremeCourt</span><span>#Rule96</span><span>#IGSTRefund</span></div>
+    </summary>
+    <div class="b">
+      Hon'ble SC has held that the omission of <strong>Rule 96(10) of the CGST Rules</strong> with effect from 8 October 2024 applies even to <strong>pending refund proceedings</strong>.<br><br>The Court relied on the Constitution Bench ruling in <em>Kolhapur Canesugar Works</em> and held that when a rule is omitted, pending proceedings under that rule can continue only if there is a <strong>saving clause or other legal mechanism</strong> preserving them.<br><br>Since Rule 96(10) was omitted <strong>without any saving clause</strong>, the restriction cannot continue to apply merely because the refund proceedings were pending when the rule was omitted.<br><br>Interestingly, the Court also noted that the GST Council's recommendation for prospective omission was only <strong>advisory</strong> and could not override the legal effect of the omission.<br><br><strong>Impact:</strong> Pending IGST refund disputes involving Rule 96(10) will now have to be considered without applying the omitted restriction.<br><br>The Supreme Court has also directed High Courts to take up pending matters on this issue expeditiously to bring the litigation to a close.
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20SC%20Rule%2096(10)%20Ruling:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details class="d">
+    <summary>
+      <div class="t">SC: Assessment Order Upload on GST Portal = Valid Service | Ignorance No Excuse</div>
+      <div class="p">Hon'ble Supreme Court dismissed an SLP filed against a Section 74 assessment order, making two critical observations...</div>
+      <div class="r"><span>Insight #161</span></div>
+      <div class="tg"><span>#SupremeCourt</span><span>#GSTPortal</span><span>#Section74</span></div>
+    </summary>
+    <div class="b">
+      Hon'ble Supreme Court dismissed an SLP filed against a Section 74 assessment order, making two critical observations.<br><br>First, <strong>upload of an assessment order on the electronic portal constitutes valid communication</strong> — no convincing reason exists to overlook electronic service, and ignorance of a portal-uploaded order will not be accepted.<br><br>Second, and independently, the petitioner's own admission of having become aware of proceedings in 2024 yet approaching the High Court by writ only in 2025 — by which time Section 107 appeal was time-barred — was fatal.<br><br>The Court firmly held that <strong>a writ petition cannot serve as a surrogate for an appellate remedy the petitioner chose not to avail.</strong><br><br><em>Kamal Ideal Infratech Pvt. Ltd.</em>
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20SC%20Portal%20Service%20Ruling:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details class="d">
+    <summary>
+      <div class="t">Supreme Court Affirms: Wind Turbine Generators Are Movable Goods, Not Immovable Under GST</div>
+      <div class="p">The legal position that Wind Turbine Generators (WTGs) are movable goods under GST has gained major reinforcement as the Supreme Court dismissed the SLP...</div>
+      <div class="r"><span>Insight #164</span></div>
+      <div class="tg"><span>#SupremeCourt</span><span>#WindEnergy</span><span>#MovableGoods</span></div>
+    </summary>
+    <div class="b">
+      The legal position that Wind Turbine Generators (WTGs) are movable goods under GST has gained major reinforcement, as the Hon'ble Supreme Court recently dismissed the Revenue's Special Leave Petition (SLP) against the landmark Andhra Pradesh High Court ruling.<br><br>Hon'ble AP High Court struck down the department's attempt to classify WTG turnkey contracts as an 18% "works contract" for immovable property.<br><br>The Court held that <strong>the massive earth-embedded civil foundation exists purely for the operational stability of the machinery against high wind loads.</strong><br><br>This ruling has significant implications for the renewable energy sector, confirming that WTG installations should not be treated as immovable property for GST purposes.
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20SC%20Wind%20Turbine%20Ruling:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details class="d">
+    <summary>
+      <div class="t">BOT Toll GST Dispute Reaches Supreme Court</div>
+      <div class="p">Hon'ble Supreme Court has issued notice in CG Tollway's SLP challenging the Rajasthan HC ruling that treated a BOT concessionaire's obligations as taxable...</div>
+      <div class="r"><span>Insight #165</span></div>
+      <div class="tg"><span>#SupremeCourt</span><span>#BOT</span><span>#TollGST</span></div>
+    </summary>
+    <div class="b">
+      Hon'ble Supreme Court has issued notice in CG Tollway's SLP challenging the Rajasthan HC ruling that treated a DBFOT/BOT concessionaire's obligations to NHAI as taxable "works contract service" in exchange for toll rights, sustaining demand with interest and penalty.<br><br>The Assessee argues <strong>no supply or consideration flows to NHAI</strong>, toll collections remain exempt and CBIC's clarification on BOT projects was overlooked.<br><br>It further submits that reliance on the Telangana HC's <em>GMR Pochanpalli</em> decision is misplaced, cites divergent HC views, and invokes <em>Larsen & Toubro</em> to contend that EPC contractors have already discharged GST, making the levy impermissible double taxation.
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20SC%20BOT%20Toll%20Notice:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details class="d">
+    <summary>
+      <div class="t">SC Upholds Writ Remedy; Slams "Power Grab" by Authorities</div>
+      <div class="p">In a major relief for taxpayers, the Supreme Court has clarified that the alternate remedy rule is not an absolute bar to filing a Writ petition...</div>
+      <div class="r"><span>Insight #183</span></div>
+      <div class="tg"><span>#SupremeCourt</span><span>#WritRemedy</span><span>#DueProcess</span></div>
+    </summary>
+    <div class="b">
+      In a major relief for taxpayers, the Supreme Court in 2026 INSC 309 has <strong>clarified that the "alternate remedy" rule is not an absolute bar to filing a Writ petition.</strong> Para 32 of the judgment notes that while Courts usually don't interfere with Show Cause Notices (SCN), they must step in if the notice is an "abuse of process" or issued with a "pre-determined mind".<br><br>The Court took serious note of a procedural "power grab", where an Adjudicating Authority tried to "overrule" a lower official's finding that favored the accused, even while an appeal was pending. Terming this an "abdication of power," the SC quashed the penalty orders and ruled that <strong>authorities cannot jump the gun. The legal hierarchy must be respected:</strong> the Appeal Tribunal must decide the validity of the "win" first before any further penalty proceedings can move an inch.
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20SC%20Writ%20Remedy%20Ruling:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details class="d">
+    <summary>
+      <div class="t">SC to Examine Whether Section 5 of Limitation Act Applies to Service Tax Appeals</div>
+      <div class="p">Hon'ble Supreme Court has issued notice to consider whether delay in filing an appeal under Section 85(3A) of the Finance Act, 1994 can be condoned...</div>
+      <div class="r"><span>Insight #191</span></div>
+      <div class="tg"><span>#SupremeCourt</span><span>#LimitationAct</span><span>#ServiceTax</span></div>
+    </summary>
+    <div class="b">
+      Hon'ble Supreme Court has issued notice in <em>Morthala Sidda Reddy v. Union of India &amp; Ors.</em>, SLP(C) No. 7778/2026, to consider whether delay in filing an appeal under Section 85(3A) of the Finance Act, 1994 can be condoned by invoking Section 5 of the Limitation Act, 1963.<br><br>The matter arises from a Telangana High Court decision upholding dismissal of a service tax appeal filed after more than two and a half years, beyond the condonable period, in a case where the department had raised a demand after treating the petitioner's receipts as consideration for taxable services due to non-filing of ST-3 returns.<br><br>The petitioner contended that he had rendered exempt works contract services for State Government projects, had not received earlier notices, and had also faced Covid-related hardship, while the department maintained that multiple communications had been sent to his registered address and that he had failed to disclose taxable services.
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20SC%20Limitation%20Act%20Notice:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details class="d">
+    <summary>
+      <div class="t">SC Upholds CESTAT: Coal Sizing Is 'Manufacture', Not a Taxable Mining Service</div>
+      <div class="p">Hon'ble Supreme Court has dismissed Revenue's appeal in the coal sizing case, affirming that segregating, crushing, and sizing coal is 'manufacture'...</div>
+      <div class="r"><span>Insight #142</span></div>
+      <div class="tg"><span>#SupremeCourt</span><span>#CESTAT</span><span>#CoalSizing</span></div>
+    </summary>
+    <div class="b">
+      Hon'ble Supreme Court has dismissed Revenue's appeal in the coal sizing case, affirming that <strong>the process of segregating, crushing, and sizing coal to buyer specifications is 'manufacture' and not a taxable mining service.</strong><br><br>Since the assessee was already paying excise duty (and VAT/CST earlier) on coal sizing, the Court held that service tax under mining services cannot apply, upholding CESTAT Kolkata's ruling and closing the dispute in view of Revenue's own concession.
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20SC%20Coal%20Sizing%20Ruling:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details class="d">
+    <summary>
+      <div class="t">SC Upholds CESTAT: N-Hexane Classified Under Chapter 29 — Reliance (IPCL) Dispute Settled</div>
+      <div class="p">In a monumental resolution to a complex legal battle, the Supreme Court has officially dismissed the appeals, upholding the CESTAT ruling in favor of Reliance (IPCL)...</div>
+      <div class="r"><span>Insight #143</span></div>
+      <div class="tg"><span>#SupremeCourt</span><span>#CESTAT</span><span>#Classification</span></div>
+    </summary>
+    <div class="b">
+      🚨 <strong>FINALLY CONCLUDED:</strong> In a monumental resolution to a complex legal battle dragging on for over 15 years, the Supreme Court has officially dismissed the appeals, upholding the CESTAT ruling in favor of <em>Reliance (IPCL)</em>!<br><br>The SC judgement establishes a <strong>strict legal precedent for the entire petrochemical sector</strong>, confirming that N-Hexane / Exxsol Hexane must be classified under Chapter 29 as a separately defined organic compound.<br><br>By rejecting the classification under Chapter 27, the Apex Court has permanently settled a decade-and-a-half of intense litigation uncertainty regarding process-derived impurities and "spark ignition" suitability standards.
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20SC%20N-Hexane%20Ruling:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details class="d">
+    <summary>
+      <div class="t">SC: Composite Supplies Cannot Be Artificially Split to Tax a Levy Introduced Later</div>
+      <div class="p">Hon'ble Supreme Court upheld the CESTAT ruling that turnkey contracts for ATMs executed prior to June 1, 2007 cannot be vivisected...</div>
+      <div class="r"><span>Insight #144</span></div>
+      <div class="tg"><span>#SupremeCourt</span><span>#CESTAT</span><span>#CompositeSupply</span></div>
+    </summary>
+    <div class="b">
+      Hon'ble Supreme Court has dismissed the Revenue's appeal and upheld the CESTAT ruling that <strong>turnkey contracts for supply, installation and commissioning of ATMs executed prior to 1 June 2007 cannot be vivisected to levy service tax under "Commissioning or Installation Service".</strong><br><br>The Tribunal held that the contracts were indivisible works contracts executed for a lump-sum consideration, with installation and commissioning being merely incidental to the supply of ATMs.<br><br>Since neither the contracts nor the invoices segregated the value of goods and services, the entire transaction retained its composite character and could not be subjected to service tax before works contracts were specifically brought within the tax net from 1 June 2007.<br><br>The decision may have a much wider significance. It reinforces the principle that <strong>a transaction cannot be fastened to a levy that was introduced only at a later point in time.</strong>
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20SC%20Composite%20Supplies%20Ruling:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details class="d">
+    <summary>
+      <div class="t">SC Upholds Service Tax on Auto OEM Referral Fees & Ad Reimbursements</div>
+      <div class="p">Hon'ble Supreme Court has upheld taxability of referral fees and advertisement reimbursements received by auto OEMs from banks and insurers...</div>
+      <div class="r"><span>Insight #145</span></div>
+      <div class="tg"><span>#SupremeCourt</span><span>#CESTAT</span><span>#OEMReferralFees</span></div>
+    </summary>
+    <div class="b">
+      Hon'ble Supreme Court has upheld the taxability of referral fees and advertisement reimbursements received by auto OEMs from banks and insurers.<br><br>The Apex Court confirmed that the contractual arrangements go well beyond incidental facilitation, as the OEM was contractually required to <strong>identify prospective buyers, share customer databases, provide physical showroom infrastructure, and use the bank's branding in advertisements.</strong><br><br>Because there was a clear, active flow of consideration in exchange for these promotion and marketing activities, the Court ruled that the income is fully taxable under 'Business Auxiliary Service', serving as an input service for the banks and insurance companies.<br><br>While the tax stands, the Court <strong>completely dropped the penalties</strong> originally sustained by the tribunal.
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20SC%20OEM%20Referral%20Fees%20Ruling:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details class="d">
+    <summary>
+      <div class="t">SC Landmark: P2P Model Overturned — Service Tax Imposed on OMC Trade Margins</div>
+      <div class="p">Hon'ble Supreme Court delivered a landmark verdict overturning long-standing Tribunal precedents and upholding service tax on trade margins in CNG distribution...</div>
+      <div class="r"><span>Insight #146</span></div>
+      <div class="tg"><span>#SupremeCourt</span><span>#CESTAT</span><span>#P2PModel</span></div>
+    </summary>
+    <div class="b">
+      Hon'ble Supreme Court delivered a landmark verdict in the BPCL/HPCL matter, overturning long-standing Tribunal precedents and allowing the Revenue's appeal, effectively upholding the levy of service tax on trade margins in CNG distribution.<br><br>The Court applied a <strong>substance-over-form approach</strong>, reasoning that:<br><br>(a) the supplier retained complete control over pricing, equipment, and operations;<br>(b) title/ownership of CNG never transferred to the OMCs at any point;<br>(c) risk of supply deficiency remained entirely with the supplier;<br>(d) the agreement expressly provided for "commission in consideration of services provided" — payable per kg actually sold, a hallmark of agency remuneration;<br>(e) upon termination, unsold CNG was to be returned to the supplier;<br>(f) the OMCs' role was limited to providing site, infrastructure, manpower, and marketing facilitation.<br><br>The Court rejected the argument that VAT payment conclusively established a sale, holding that <strong>form of tax compliance cannot override the substantive legal relationship.</strong>
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20SC%20OMC%20Trade%20Margins%20Ruling:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details class="d">
+    <summary>
+      <div class="t">SC Examines Service Tax on Upfront Lease Premiums — DMRC Challenge</div>
+      <div class="p">Hon'ble Supreme Court has issued notice in an appeal by DMRC challenging a CESTAT order upholding a ₹45 crore Service Tax demand on upfront fees...</div>
+      <div class="r"><span>Insight #147</span></div>
+      <div class="tg"><span>#SupremeCourt</span><span>#CESTAT</span><span>#LeasePremium</span></div>
+    </summary>
+    <div class="b">
+      Hon'ble Supreme Court has issued notice in an appeal by the Delhi Metro Rail Corporation (DMRC) challenging a CESTAT order that had upheld a ₹45 crore Service Tax demand on <strong>one-time upfront fees received for long-term property development leases.</strong><br><br>The core issue revolves around whether these upfront premiums (salami) collected prior to July 2010 are taxable under the "Renting of Immovable Property Service".<br><br>The Apex Court has agreed to hear the matter on its merits, which will be a significant development to track for <strong>legacy disputes involving concession agreements and long-term lease premiums.</strong>
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20SC%20DMRC%20Lease%20Notice:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details class="d">
+    <summary>
+      <div class="t">Fitness Bands Classification Before SC: Can Connectivity Override Core Measuring?</div>
+      <div class="p">Hon'ble Supreme Court issues notice in GOQii's appeal against CESTAT Mumbai ruling classifying fitness bands as communication apparatus...</div>
+      <div class="r"><span>Insight #148</span></div>
+      <div class="tg"><span>#SupremeCourt</span><span>#CESTAT</span><span>#Classification</span></div>
+    </summary>
+    <div class="b">
+      Hon'ble Supreme Court issues notice in <em>GOQii's</em> appeal against CESTAT Mumbai ruling that classified its fitness bands under Heading 8517 as "communication apparatus" on account of their ability to transmit/receive data, voice and images.<br><br>Assessee challenges this, arguing that the Tribunal wrongly overturned the Commissioner's de novo order (which had relied on IIT-Bombay expert opinion) and discarded unrebutted technical evidence without any contrary material.<br><br>It is further contended that <strong>Bluetooth/connectivity is merely ancillary and cannot override the essential character of the device as a health monitoring instrument</strong> (pedometer/vital tracking), thus warranting classification under Chapter 90 (CTI 9029 1090).<br><br>SC has taken note of these issues and granted interim relief by restraining invocation of the Bank Guarantee.
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20SC%20GOQii%20Fitness%20Bands%20Notice:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+  <details class="d">
+    <summary>
+      <div class="t">SC Directs Petitioner to Approach GSTAT President Where HC Declined Writ</div>
+      <div class="p">The Hon'ble Supreme Court has offered a practical remedy for taxpayers facing transitional delays at the newly constituted GSTAT...</div>
+      <div class="r"><span>Insight #92</span></div>
+      <div class="tg"><span>#SupremeCourt</span><span>#GSTAT</span><span>#InterimRelief</span></div>
+    </summary>
+    <div class="b">
+      The Hon'ble Supreme Court has offered a practical remedy for taxpayers facing transitional delays at the newly constituted GST Appellate Tribunal (GSTAT).<br><br>In <em>M/s I.P. Roadlines India Ltd.</em>, the Allahabad High Court declined to entertain a writ because the GSTAT had technically become functional. However, noting the taxpayer's plea that cases were not yet being registered or numbered, the Supreme Court permitted the petitioner to directly mention the matter before the GSTAT President.<br><br><strong>The Court expressly directed the President to register the case, hear it for any necessary interim relief, and grant it a priority hearing given its advanced stage before the High Court.</strong><br><br>This order serves as a crucial strategic workaround for businesses seeking urgent relief while the Tribunal's registry becomes fully operational.
+      <div class="share-bar">
+        <a class="share-btn" href="https://api.whatsapp.com/send?text=Check%20out%20SC%20GSTAT%20Directives:%20https://taxinsighthub.org" target="_blank">Share WhatsApp</a>
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://taxinsighthub.org" target="_blank">Share LinkedIn</a>
+      </div>
+    </div>
+  </details>
+
+</section>
+
+<footer>
+  <div class="disclaimer-box">
+    <strong>Disclaimer:</strong> The content on this page is based on personal opinion and knowledge. Its veracity should be verified independently and it is not to be used for commercial purposes. This content is strictly for knowledge-sharing and is not intended for the solicitation of any business.
+  </div>
+  <div class="fn">Tax Insight Hub</div>
+  <div class="fd">Real-time Tax updates and litigation perspectives… all in one hub</div>
+  <div class="fl" style="display:flex;gap:12px;justify-content:center">
+    <a href="https://whatsapp.com/channel/0029VbCcLS3BFLgbfVsvAY0Y" target="_blank" title="WhatsApp Channel" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:#25D366;color:white;border-radius:50%;text-decoration:none">
+      <svg style="width:18px;height:18px;fill:currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/vikash-agarwal-4a492136" target="_blank" title="LinkedIn Profile" style="display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:#0A66C2;color:white;border-radius:50%;text-decoration:none">
+      <svg style="width:18px;height:18px;fill:currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+    </a>
+  </div>
+  <div style="font-size:10px; color:var(--gr); margin-top:10px;">Curated by Vikash Agarwal · © 2026 Tax Insight Hub</div>
+</footer>
+
+<script>
+  window.addEventListener('load', function() {
+    document.querySelectorAll('.share-bar').forEach(bar => {
+      const card = bar.closest('details');
+      if (!card) return;
+      const title = card.querySelector('.t')?.innerText.trim() || 'Tax Update';
+      const text = card.querySelector('.p')?.innerText.trim() || '';
+      const url = window.location.href;
+
+      bar.innerHTML = '';
+
+      const shareBtn = document.createElement('button');
+      shareBtn.className = 'share-btn';
+      shareBtn.innerHTML = '<svg style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8m-4-6l-4-4m0 0L8 6m4-4v12"/></svg> Share';
+
+      shareBtn.onclick = function(e) {
+        e.preventDefault();
+        if (navigator.share) {
+          navigator.share({ title: title, text: title + '\n\n' + text, url: url }).catch(()=>{});
+        } else {
+          navigator.clipboard.writeText(title + '\n\n' + url);
+          alert('Link copied to clipboard!');
+        }
+      };
+
+      bar.appendChild(shareBtn);
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const section = document.querySelector('section.s');
+    if (!section) return;
+    const cards = Array.from(section.querySelectorAll('details.d'));
+    cards.sort((a, b) => {
+      const getNum = (el) => {
+        const text = el.querySelector('.r')?.innerText || '';
+        const match = text.match(/#(\d+)/);
+        return match ? parseInt(match[1], 10) : 0;
+      };
+      return getNum(b) - getNum(a);
+    });
+    cards.forEach(card => section.appendChild(card));
+  });
+</script>
+
+</body>
+</html>
