@@ -67,6 +67,10 @@
     <a href="industry-policy.html">Industry & Policy</a>
   </nav>
 
+<div style="max-width:800px;margin:16px auto 0;padding:0 16px;">
+  <input type="text" id="searchInput" placeholder="🔍 Search tax updates, sections, or judgments..." style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid rgba(212,168,67,0.3);background:rgba(255,255,255,0.05);color:var(--w);font-size:13.5px;outline:none;">
+</div>
+  
   <section class="s">
 
     <!-- Insight #200 -->
@@ -243,5 +247,22 @@
       });
     });
   </script>
+
+<script>
+  document.getElementById('searchInput').addEventListener('input', function(e) {
+    const query = e.target.value.toLowerCase().trim();
+    const cards = document.querySelectorAll('section.s details.d');
+
+    cards.forEach(card => {
+      const text = card.innerText.toLowerCase();
+      if (text.includes(query)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script>
+  
 </body>
 </html>
